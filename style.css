@@ -1,0 +1,27 @@
+.container,
+.buttons,
+.score,
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    flex-direction: column;
+    gap: 3em;
+}
+
+h1 {
+    text-align-last: center;
+}
+
+.buttons {
+    gap: 2em;
+}
+
+button {
+    height: 10em;
+    width: 10em;
+    padding: 1em;
+}
