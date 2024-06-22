@@ -1,29 +1,31 @@
+const FA_COMMENT = "!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.";
+const NS_URI_SVG = "http://www.w3.org/2000/svg";
+
+const VB_512_512 = "0 0 512 512";
+
+const USER = "M370.7 96.1C346.1 39.5 289.7 0 224 0S101.9 39.5 77.3 96.1C60.9 97.5 48 111.2 48 128v64c0 16.8 12.9 30.5 29.3 31.9C101.9 280.5 158.3 320 224 320s122.1-39.5 146.7-96.1c16.4-1.4 29.3-15.1 29.3-31.9V128c0-16.8-12.9-30.5-29.3-31.9zM336 144v16c0 53-43 96-96 96H208c-53 0-96-43-96-96V144c0-26.5 21.5-48 48-48H288c26.5 0 48 21.5 48 48zM189.3 162.7l-6-21.2c-.9-3.3-3.9-5.5-7.3-5.5s-6.4 2.2-7.3 5.5l-6 21.2-21.2 6c-3.3 .9-5.5 3.9-5.5 7.3s2.2 6.4 5.5 7.3l21.2 6 6 21.2c.9 3.3 3.9 5.5 7.3 5.5s6.4-2.2 7.3-5.5l6-21.2 21.2-6c3.3-.9 5.5-3.9 5.5-7.3s-2.2-6.4-5.5-7.3l-21.2-6zM112.7 316.5C46.7 342.6 0 407 0 482.3C0 498.7 13.3 512 29.7 512H128V448c0-17.7 14.3-32 32-32H288c17.7 0 32 14.3 32 32v64l98.3 0c16.4 0 29.7-13.3 29.7-29.7c0-75.3-46.7-139.7-112.7-165.8C303.9 338.8 265.5 352 224 352s-79.9-13.2-111.3-35.5zM176 448c-8.8 0-16 7.2-16 16v48h32V464c0-8.8-7.2-16-16-16zm96 32a16 16 0 1 0 0-32 16 16 0 1 0 0 32z";
+const COMPUTER = "M320 0c17.7 0 32 14.3 32 32V96H472c39.8 0 72 32.2 72 72V440c0 39.8-32.2 72-72 72H168c-39.8 0-72-32.2-72-72V168c0-39.8 32.2-72 72-72H288V32c0-17.7 14.3-32 32-32zM208 384c-8.8 0-16 7.2-16 16s7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16H208zm96 0c-8.8 0-16 7.2-16 16s7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16H304zm96 0c-8.8 0-16 7.2-16 16s7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16H400zM264 256a40 40 0 1 0 -80 0 40 40 0 1 0 80 0zm152 40a40 40 0 1 0 0-80 40 40 0 1 0 0 80zM48 224H64V416H48c-26.5 0-48-21.5-48-48V272c0-26.5 21.5-48 48-48zm544 0c26.5 0 48 21.5 48 48v96c0 26.5-21.5 48-48 48H576V224h16z";
+
+const ROCK = "M176,64 c 0,-8.800002 7.2,-16 16,-16 8.8,0 15.99999,7.199998 15.99999,16 0,9.099999 5.10001,17.399998 13.30002,21.499999 8.2,4.099995 17.89999,3.200001 25.09999,-2.3 2.7,-2 6,-3.199999 9.60001,-3.199999 C 264.79999,80 272,87.2 272,95.999998 272,105.1 277.09999,113.4 285.29999,117.49999 293.49999,121.6 303.2,120.7 310.4,115.2 c 2.7,-2.00001 6,-3.2 9.6,-3.2 8.79999,0 16,7.2 16,16 0,9.1 5.1,17.4 13.3,21.50001 8.2,4.09999 17.89999,3.19999 25.09999,-2.30002 2.70001,-1.99999 6.00001,-3.2 9.6,-3.2 C 392.8,143.99999 400,151.2 400,160 v 104 c 0,31.3 -20,58 -48,67.9 -9.6,3.39999 -16,12.49999 -16,22.59999 V 488 c 0,13.29999 10.7,24 24,24 13.3,0 23.99999,-10.70001 23.99999,-24 V 370.2 C 422,350.1 448,310.1 448,264 V 160 C 448,124.7 419.3,95.999998 383.99999,95.999998 381.2,95.999998 378.4,96.199997 375.7,96.499994 364.80001,77.1 343.89999,64 320,64 c -2.80001,0 -5.6,0.2 -8.3,0.499999 -10.9,-19.399999 -31.8,-32.5 -55.69999,-32.5 C 253.2,31.999999 250.39999,32.2 247.69999,32.5 236.8,13.099999 215.89999,0 192,0 156.69999,0 128,28.699999 128,64 v 64.3 c -11.7,7.4 -22.5,16.4 -32.000001,26.9 L 113.8,171.29999 95.999999,155.2 86.600001,165.70001 C 72,181.8 64,202.8 64,224.6 v 12.8 c 0,49.59999 24.2,96.09999 64.8,124.5 l 13.8,-19.70001 -13.8,19.70001 8.9,6.2 c 6.9,4.8 14.4,8.6 22.3,11.30001 V 488 c 0,13.29999 10.7,24 24,24 13.29999,0 23.99999,-10.70001 23.99999,-24 V 359.89999 C 207.99999,347.3 198.19999,336.8 185.6,336 c -7.3,-0.5 -14.30001,-2.9 -20.3,-7.1 L 152.2,347.59999 165.3,328.9 156.4,322.7 C 128.6,303.1 112,271.3 112,237.4 v -12.8 c 0,-9.90001 3.7,-19.39999 10.3,-26.80001 l 9.4,-10.5 C 135.5,183.1 139.6,179.2 144,175.7 V 208 c 0,8.80001 7.2,15.99999 16,15.99999 8.80001,0 16,-7.19998 16,-15.99999 V 142.3 128 Z";
+const USER_ROCK = "M448,176 c 8.8,0 16,7.2 16,16 0,8.8 -7.2,15.99999 -16,15.99999 -9.1,0 -17.4,5.10001 -21.5,13.30002 -4.09999,8.2 -3.2,17.89999 2.3,25.09999 2,2.7 3.2,6 3.2,9.60001 C 432,264.79999 424.8,272 416,272 c -9.1,0 -17.4,5.09999 -21.49999,13.29999 C 390.4,293.49999 391.3,303.2 396.8,310.4 c 2.00001,2.7 3.2,6 3.2,9.6 0,8.79999 -7.2,16 -16,16 -9.1,0 -17.4,5.1 -21.50001,13.3 -4.09999,8.2 -3.19999,17.89999 2.30002,25.09999 1.99999,2.70001 3.2,6.00001 3.2,9.6 C 368.00001,392.8 360.8,400 352,400 H 248 c -31.3,0 -58,-20 -67.9,-48 -3.39999,-9.6 -12.49999,-16 -22.59999,-16 H 24 c -13.29999,0 -24,10.7 -24,24 0,13.3 10.70001,23.99999 24,23.99999 H 141.8 C 161.9,422 201.9,448 248,448 h 104 c 35.3,0 64,-28.7 64,-64.00001 C 416,381.2 415.8,378.4 415.50001,375.7 434.9,364.80001 448,343.89999 448,320 c 0,-2.80001 -0.2,-5.6 -0.5,-8.3 19.4,-10.9 32.5,-31.8 32.5,-55.69999 0,-2.80001 -0.2,-5.60002 -0.5,-8.30002 C 498.9,236.8 512,215.89999 512,192 512,156.69999 483.3,128 448,128 H 383.7 C 376.3,116.3 367.3,105.5 356.8,95.999999 L 340.70001,113.8 356.8,95.999999 346.29999,86.600001 C 330.2,72 309.2,64 287.4,64 h -12.8 c -49.59999,0 -96.09999,24.2 -124.5,64.8 l 19.70001,13.8 -19.70001,-13.8 -6.2,8.9 c -4.8,6.9 -8.6,14.4 -11.30001,22.3 H 24 c -13.29999,0 -24,10.7 -24,24 0,13.29999 10.70001,23.99999 24,23.99999 h 128.10001 c 12.59999,0 23.09999,-9.8 23.89999,-22.39999 0.5,-7.3 2.9,-14.30001 7.1,-20.3 l -18.69999,-13.1 18.69999,13.1 6.2,-8.9 C 208.9,128.6 240.7,112 274.6,112 h 12.8 c 9.90001,0 19.39999,3.7 26.80001,10.3 l 10.5,9.4 C 328.9,135.5 332.8,139.6 336.3,144 H 304 c -8.80001,0 -15.99999,7.2 -15.99999,16 0,8.80001 7.19998,16 15.99999,16 h 65.7 14.3 z";
+const COMPUTER_ROCK = "M64,176 c -8.8,0 -16,7.2 -16,16 0,8.8 7.2,15.99999 16,15.99999 9.1,0 17.4,5.10001 21.5,13.30002 4.09999,8.2 3.2,17.89999 -2.3,25.09999 -2,2.7 -3.2,6 -3.2,9.60001 C 80,264.79999 87.2,272 96,272 c 9.1,0 17.4,5.09999 21.49999,13.29999 C 121.6,293.49999 120.7,303.2 115.2,310.4 c -2.00001,2.7 -3.2,6 -3.2,9.6 0,8.79999 7.2,16 16,16 9.1,0 17.4,5.1 21.50001,13.3 4.09999,8.2 3.19999,17.89999 -2.30002,25.09999 -1.99999,2.70001 -3.2,6.00001 -3.2,9.6 C 143.99999,392.8 151.2,400 160,400 h 104 c 31.3,0 58,-20 67.9,-48 3.39999,-9.6 12.49999,-16 22.59999,-16 H 488 c 13.29999,0 24,10.7 24,24 0,13.3 -10.70001,23.99999 -24,23.99999 H 370.2 C 350.1,422 310.1,448 264,448 H 160 C 124.7,448 96,419.3 96,383.99999 96,381.2 96.2,378.4 96.49999,375.7 77.1,364.80001 64,343.89999 64,320 c 0,-2.80001 0.2,-5.6 0.5,-8.3 C 45.1,300.8 32,279.9 32,256.00001 32,253.2 32.2,250.39999 32.5,247.69999 13.1,236.8 0,215.89999 0,192 0,156.69999 28.7,128 64,128 h 64.3 c 7.4,-11.7 16.4,-22.5 26.9,-32.000001 L 171.29999,113.8 155.2,95.999999 165.70001,86.600001 C 181.8,72 202.8,64 224.6,64 h 12.8 c 49.59999,0 96.09999,24.2 124.5,64.8 l -19.70001,13.8 19.70001,-13.8 6.2,8.9 c 4.8,6.9 8.6,14.4 11.30001,22.3 H 488 c 13.29999,0 24,10.7 24,24 0,13.29999 -10.70001,23.99999 -24,23.99999 H 359.89999 C 347.3,207.99999 336.8,198.19999 336,185.6 c -0.5,-7.3 -2.9,-14.30001 -7.1,-20.3 L 347.59999,152.2 328.9,165.3 322.7,156.4 C 303.1,128.6 271.3,112 237.4,112 h -12.8 c -9.90001,0 -19.39999,3.7 -26.80001,10.3 l -10.5,9.4 C 183.1,135.5 179.2,139.6 175.7,144 H 208 c 8.80001,0 15.99999,7.2 15.99999,16 0,8.80001 -7.19998,16 -15.99999,16 H 142.3 128 Z";
+
+const PAPER = "M256 0c-25.3 0-47.2 14.7-57.6 36c-7-2.6-14.5-4-22.4-4c-35.3 0-64 28.7-64 64V261.5l-2.7-2.7c-25-25-65.5-25-90.5 0s-25 65.5 0 90.5L106.5 437c48 48 113.1 75 181 75H296h8c1.5 0 3-.1 4.5-.4c91.7-6.2 165-79.4 171.1-171.1c.3-1.5 .4-3 .4-4.5V160c0-35.3-28.7-64-64-64c-5.5 0-10.9 .7-16 2V96c0-35.3-28.7-64-64-64c-7.9 0-15.4 1.4-22.4 4C303.2 14.7 281.3 0 256 0zM240 96.1c0 0 0-.1 0-.1V64c0-8.8 7.2-16 16-16s16 7.2 16 16V95.9c0 0 0 .1 0 .1V232c0 13.3 10.7 24 24 24s24-10.7 24-24V96c0 0 0 0 0-.1c0-8.8 7.2-16 16-16s16 7.2 16 16v55.9c0 0 0 .1 0 .1v80c0 13.3 10.7 24 24 24s24-10.7 24-24V160.1c0 0 0-.1 0-.1c0-8.8 7.2-16 16-16s16 7.2 16 16V332.9c-.1 .6-.1 1.3-.2 1.9c-3.4 69.7-59.3 125.6-129 129c-.6 0-1.3 .1-1.9 .2H296h-8.5c-55.2 0-108.1-21.9-147.1-60.9L52.7 315.3c-6.2-6.2-6.2-16.4 0-22.6s16.4-6.2 22.6 0L119 336.4c6.9 6.9 17.2 8.9 26.2 5.2s14.8-12.5 14.8-22.2V96c0-8.8 7.2-16 16-16c8.8 0 16 7.1 16 15.9V232c0 13.3 10.7 24 24 24s24-10.7 24-24V96.1z";
+const USER_PAPER = "M512,256 c 0,-25.3 -14.7,-47.2 -36,-57.6 2.6,-7 4,-14.5 4,-22.4 0,-35.3 -28.7,-64 -64,-64 H 250.5 l 2.7,-2.7 c 25,-25 25,-65.5 0,-90.5 -25,-25 -65.5,-25 -90.5,0 L 75,106.5 c -48,48 -75,113.1 -75,181 v 8.5 8 c 0,1.5 0.1,3 0.4,4.5 6.2,91.7 79.4,165 171.1,171.1 1.5,0.3 3,0.4 4.5,0.4 h 176 c 35.3,0 64,-28.7 64,-64 0,-5.5 -0.7,-10.9 -2,-16 h 2 c 35.3,0 64,-28.7 64,-64 0,-7.9 -1.4,-15.4 -4,-22.4 21.3,-10.4 36,-32.3 36,-57.6 z m -96.1,-16 c 0,0 0.1,0 0.1,0 h 32 c 8.8,0 16,7.2 16,16 0,8.8 -7.2,16 -16,16 h -31.9 c 0,0 -0.1,0 -0.1,0 H 280 c -13.3,0 -24,10.7 -24,24 0,13.3 10.7,24 24,24 h 136 c 0,0 0,0 0.1,0 8.8,0 16,7.2 16,16 0,8.8 -7.2,16 -16,16 h -55.9 c 0,0 -0.1,0 -0.1,0 h -80 c -13.3,0 -24,10.7 -24,24 0,13.3 10.7,24 24,24 h 71.8 c 0,0 0.1,0 0.1,0 8.8,0 16,7.2 16,16 0,8.8 -7.2,16 -16,16 H 179.1 c -0.6,-0.1 -1.3,-0.1 -1.9,-0.2 -69.7,-3.4 -125.6,-59.3 -129,-129 0,-0.6 -0.1,-1.3 -0.2,-1.9 v -4.9 -8.5 c 0,-55.2 21.9,-108.1 60.9,-147.1 l 87.8,-87.7 c 6.2,-6.2 16.4,-6.2 22.6,0 6.2,6.2 6.2,16.4 0,22.6 L 175.6,119 c -6.9,6.9 -8.9,17.2 -5.2,26.2 3.7,9 12.5,14.8 22.2,14.8 H 416 c 8.8,0 16,7.2 16,16 0,8.8 -7.1,16 -15.9,16 H 280 c -13.3,0 -24,10.7 -24,24 0,13.3 10.7,24 24,24 z";
+const COMPUTER_PAPER = "M0,256 c 0,-25.3 14.7,-47.2 36,-57.6 -2.6,-7 -4,-14.5 -4,-22.4 0,-35.3 28.7,-64 64,-64 h 165.5 l -2.7,-2.7 c -25,-25 -25,-65.5 0,-90.5 25,-25 65.5,-25 90.5,0 l 87.7,87.7 c 48,48 75,113.1 75,181 v 8.5 8 c 0,1.5 -0.1,3 -0.4,4.5 -6.2,91.7 -79.4,165 -171.1,171.1 -1.5,0.3 -3,0.4 -4.5,0.4 H 160 c -35.3,0 -64,-28.7 -64,-64 0,-5.5 0.7,-10.9 2,-16 h -2 c -35.3,0 -64,-28.7 -64,-64 0,-7.9 1.4,-15.4 4,-22.4 C 14.7,303.2 0,281.3 0,256 Z m 96.1,-16 c 0,0 -0.1,0 -0.1,0 H 64 c -8.8,0 -16,7.2 -16,16 0,8.8 7.2,16 16,16 h 31.9 c 0,0 0.1,0 0.1,0 h 136 c 13.3,0 24,10.7 24,24 0,13.3 -10.7,24 -24,24 H 96 c 0,0 0,0 -0.1,0 -8.8,0 -16,7.2 -16,16 0,8.8 7.2,16 16,16 h 55.9 c 0,0 0.1,0 0.1,0 h 80 c 13.3,0 24,10.7 24,24 0,13.3 -10.7,24 -24,24 h -71.8 c 0,0 -0.1,0 -0.1,0 -8.8,0 -16,7.2 -16,16 0,8.8 7.2,16 16,16 h 172.9 c 0.6,-0.1 1.3,-0.1 1.9,-0.2 69.7,-3.4 125.6,-59.3 129,-129 0,-0.6 0.1,-1.3 0.2,-1.9 V 296 287.5 C 464,232.3 442.1,179.4 403.1,140.4 L 315.3,52.7 c -6.2,-6.2 -16.4,-6.2 -22.6,0 -6.2,6.2 -6.2,16.4 0,22.6 l 43.7,43.7 c 6.9,6.9 8.9,17.2 5.2,26.2 -3.7,9 -12.5,14.8 -22.2,14.8 H 96 c -8.8,0 -16,7.2 -16,16 0,8.8 7.1,16 15.9,16 H 232 c 13.3,0 24,10.7 24,24 0,13.3 -10.7,24 -24,24 z";
+
+const SCISSORS = "M276.3,0.19969301 C 241,-1.000307 211.3,26.599694 210.1,61.899694 l -0.1,3.3 -1.9,-8.2 C 200.5,22.499694 166.3,0.69969301 131.8,8.2996935 97.3,15.899694 75.5,50.199694 83.2,84.699694 L 121.5,257.6997 c -2.9,2.3 -5.7,4.7 -8.5,7.1 l -20.3,18.4 c -18.2,16.7 -28.7,40.3 -28.7,65.1 v 10.2 c 0,54.1 28.7,104.1 75.4,131.3 l 2.6,1.5 c 23.2,13.6 49.7,20.7 76.6,20.7 H 344 c 66.3,0 120,-53.7 120,-120 v -8 -96 c 0,-35.3 -28.7,-64 -64,-64 -2.8,0 -5.6,0.2 -8.3,0.5 -11,-19.4 -31.8,-32.5 -55.7,-32.5 -0.8,0 -1.6,0 -2.4,0 L 338,66.399694 c 1.2,-35.3 -26.4,-65.000001 -61.7,-66.20000099 z M 258.1,63.599694 c 0.3,-8.8 7.7,-15.7 16.5,-15.4 8.8,0.3 15.7,7.7 15.4,16.5 L 284.4,226.1997 c -0.3,9.8 5.3,18.7 14.2,22.7 8.9,4 19.3,2.2 26.4,-4.5 2.9,-2.8 6.7,-4.4 11,-4.4 8.8,0 16,7.2 16,16 0,9.1 5.1,17.4 13.3,21.5 8.2,4.1 17.9,3.2 25.1,-2.3 2.7,-2 6,-3.2 9.6,-3.2 8.8,0 16,7.2 16,16 v 96 8 c 0,39.8 -32.2,72 -72,72 H 218.6 c -18.4,0 -36.5,-4.9 -52.4,-14.2 l -2.6,-1.5 c -32,-18.6 -51.6,-52.8 -51.6,-89.8 v -10.2 c 0,-11.3 4.8,-22 13.1,-29.6 l -15.9,-17.5 15.9,17.5 20.3,-18.4 c 0.6,-0.6 1.3,-1.1 1.9,-1.7 l 13.2,57 c 2,8.6 10.6,14 19.2,12 8.6,-2 14,-10.6 12,-19.2 L 172,262.7997 130,74.299694 c -1.9,-8.6 3.5,-17.2 12.2,-19.1 8.7,-1.9 17.2,3.5 19.1,12.2 L 202.9,254.8997 c 2.3,10.2 10.9,17.8 21.4,18.7 l 1,0.1 c 6.6,0.6 13.1,-1.5 18.1,-5.8 5,-4.3 7.9,-10.6 8.2,-17.2 z";
+const USER_SCISSORS = "M511.96231,276.3 c 1.2,-35.3 -26.4,-65 -61.7,-66.2 l -3.3,-0.1 8.2,-1.9 c 34.5,-7.6 56.3,-41.8 48.7,-76.3 -7.6,-34.5 -41.9,-56.3 -76.4,-48.6 l -173,38.3 c -2.3,-2.9 -4.7,-5.7 -7.1,-8.5 l -18.4,-20.3 c -16.7,-18.2 -40.3,-28.7 -65.1,-28.7 h -10.2 C 99.562307,64 49.562307,92.7 22.362307,139.4 l -1.5,2.6 c -13.6,23.2 -20.70000001,49.7 -20.70000001,76.6 V 344 c 0,66.3 53.70000001,120 120.00000301,120 h 8 96 c 35.3,0 64,-28.7 64,-64 0,-2.8 -0.2,-5.6 -0.5,-8.3 19.4,-11 32.5,-31.8 32.5,-55.7 0,-0.8 0,-1.6 0,-2.4 l 125.6,4.4 c 35.3,1.2 65,-26.4 66.2,-61.7 z m -63.4,-18.2 c 8.8,0.3 15.7,7.7 15.4,16.5 -0.3,8.8 -7.7,15.7 -16.5,15.4 l -161.5,-5.6 c -9.8,-0.3 -18.7,5.3 -22.7,14.2 -4,8.9 -2.2,19.3 4.5,26.4 2.8,2.9 4.4,6.7 4.4,11 0,8.8 -7.2,16 -16,16 -9.1,0 -17.4,5.1 -21.5,13.3 -4.1,8.2 -3.2,17.9 2.3,25.1 2,2.7 3.2,6 3.2,9.6 0,8.8 -7.2,16 -16,16 h -96 -8 C 80.362307,416 48.162307,383.8 48.162307,344 V 218.6 c 0,-18.4 4.9,-36.5 14.2,-52.4 l 1.5,-2.6 c 18.6,-32 52.800003,-51.6 89.800003,-51.6 h 10.2 c 11.3,0 22,4.8 29.6,13.1 l 17.5,-15.9 -17.5,15.9 18.4,20.3 c 0.6,0.6 1.1,1.3 1.7,1.9 l -57,13.2 c -8.6,2 -14,10.6 -12,19.2 2,8.6 10.6,14 19.2,12 l 85.6,-19.7 188.5,-42 c 8.6,-1.9 17.2,3.5 19.1,12.2 1.9,8.7 -3.5,17.2 -12.2,19.1 l -187.5,41.6 c -10.2,2.3 -17.8,10.9 -18.7,21.4 l -0.1,1 c -0.6,6.6 1.5,13.1 5.8,18.1 4.3,5 10.6,7.9 17.2,8.2 z";
+const COMPUTER_SCISSORS = "M.2 276.3c-1.2-35.3 26.4-65 61.7-66.2l3.3-.1L57 208.1C22.5 200.5 .7 166.3 8.3 131.8S50.2 75.5 84.7 83.2l173 38.3c2.3-2.9 4.7-5.7 7.1-8.5l18.4-20.3C299.9 74.5 323.5 64 348.3 64l10.2 0c54.1 0 104.1 28.7 131.3 75.4l1.5 2.6c13.6 23.2 20.7 49.7 20.7 76.6L512 344c0 66.3-53.7 120-120 120l-8 0-96 0c-35.3 0-64-28.7-64-64c0-2.8 .2-5.6 .5-8.3c-19.4-11-32.5-31.8-32.5-55.7c0-.8 0-1.6 0-2.4L66.4 338c-35.3 1.2-65-26.4-66.2-61.7zm63.4-18.2c-8.8 .3-15.7 7.7-15.4 16.5s7.7 15.7 16.5 15.4l161.5-5.6c9.8-.3 18.7 5.3 22.7 14.2s2.2 19.3-4.5 26.4c-2.8 2.9-4.4 6.7-4.4 11c0 8.8 7.2 16 16 16c9.1 0 17.4 5.1 21.5 13.3s3.2 17.9-2.3 25.1c-2 2.7-3.2 6-3.2 9.6c0 8.8 7.2 16 16 16l96 0 8 0c39.8 0 72-32.2 72-72l0-125.4c0-18.4-4.9-36.5-14.2-52.4l-1.5-2.6c-18.6-32-52.8-51.6-89.8-51.6l-10.2 0c-11.3 0-22 4.8-29.6 13.1l-17.5-15.9 17.5 15.9-18.4 20.3c-.6 .6-1.1 1.3-1.7 1.9l57 13.2c8.6 2 14 10.6 12 19.2s-10.6 14-19.2 12l-85.6-19.7L74.3 130c-8.6-1.9-17.2 3.5-19.1 12.2s3.5 17.2 12.2 19.1l187.5 41.6c10.2 2.3 17.8 10.9 18.7 21.4l.1 1c.6 6.6-1.5 13.1-5.8 18.1s-10.6 7.9-17.2 8.2L63.6 258.1z";
+
+const VERSUS = "M19.7 34.5c16.3-6.8 35 .9 41.8 17.2L192 364.8 322.5 51.7c6.8-16.3 25.5-24 41.8-17.2s24 25.5 17.2 41.8l-160 384c-5 11.9-16.6 19.7-29.5 19.7s-24.6-7.8-29.5-19.7L2.5 76.3c-6.8-16.3 .9-35 17.2-41.8z";
+
+
 function getComputerChoice() {
-    let num = Math.floor(Math.random() * 100);
+    const num = Math.floor(Math.random() * 99);
 
-    if (num < 33) {
-        return "rock";
-    } else if (num < 66) {
-        return "paper";
-    } else {
-        return "scissors";
-    }
-}
-
-function getHumanChoice() {
-    let choice = prompt("Type your option!").toLowerCase();
-
-    switch (choice) {
-        case "rock":
-            return "rock";
-        case "paper":
-            return "paper";
-        case "scissors":
-            return "scissors";
-        default:
-            alert("Not a valid option!");
-            break;
-    }
+    return (num < 33) ? "rock"
+        : (num < 66) ? "paper" : "scissors";
 }
 
 function playRound(humanChoice, computerChoice) {
@@ -31,75 +33,211 @@ function playRound(humanChoice, computerChoice) {
         case "rock":
             switch (computerChoice) {
                 case "scissors":
-                    console.log(`You win! ${humanChoice} beats ${computerChoice}`);
+                    updateMessages(humanChoice, computerChoice);
                     humanScore++;
                     break;
+
                 case "paper":
-                    console.log(`You lose! ${computerChoice} beats ${humanChoice}`);
+                    updateMessages(humanChoice, computerChoice, false);
                     computerScore++;
                     break;
-                default:
-                    console.log(`A draw! both have chosen ${humanChoice}`);
+
+                case "rock":
+                    updateMessages(humanChoice, computerChoice, false, true);
                     break;
             }
             break;
+
         case "paper":
             switch (computerChoice) {
                 case "rock":
-                    console.log(`You win! ${humanChoice} beats ${computerChoice}`);
+                    updateMessages(humanChoice, computerChoice);
                     humanScore++;
                     break;
+
                 case "scissors":
-                    console.log(`You lose! ${computerChoice} beats ${humanChoice}`);
+                    updateMessages(humanChoice, computerChoice, false);
                     computerScore++;
                     break;
-                default:
-                    console.log(`A draw! both have chosen ${humanChoice}`);
+
+                case "paper":
+                    updateMessages(humanChoice, computerChoice, false, true);
                     break;
             }
             break;
+
         case "scissors":
             switch (computerChoice) {
                 case "paper":
-                    console.log(`You win! ${humanChoice} beats ${computerChoice}`);
+                    updateMessages(humanChoice, computerChoice);
                     humanScore++;
                     break;
+
                 case "rock":
-                    console.log(`You lose! ${computerChoice} beats ${humanChoice}`);
+                    updateMessages(humanChoice, computerChoice, false);
                     computerScore++;
                     break;
-                default:
-                    console.log(`A draw! both have chosen ${humanChoice}`);
+
+                case "scissors":
+                    updateMessages(humanChoice, computerChoice, false, true);
                     break;
             }
             break;
-        default:
-            alert("Not a valid option!");
+    }
+}
+
+function updateScores() {
+    const humanScoreElement = document.querySelector(".human-score .score");
+    const computerScoreElement = document.querySelector(".computer-score .score");
+
+    humanScoreElement.textContent = humanScore;
+    computerScoreElement.textContent = computerScore;
+}
+
+function updateMessages(humanChoice, computerChoice, userWin = true, draw = false) {
+    const messages = document.querySelector(".messages");
+    const versus = document.querySelector(".versus");
+
+    const result = document.createElement("p");
+
+    const versusSvg = chooseSvg();
+    const humanSvg = chooseSvg(humanChoice);
+    const computerSvg = chooseSvg(computerChoice, false);
+
+    versus.replaceChildren(humanSvg, versusSvg, computerSvg);
+
+    result.textContent = (draw) ? "It's a draw!"
+        : (userWin) ? "You win!" : "Computer wins!";
+
+    messages.replaceChildren(versus, result);
+}
+
+function chooseSvg(svgType = "vs", user = true) {
+    const svg = document.createElementNS(NS_URI_SVG, "svg");
+    const path = document.createElementNS(NS_URI_SVG, "path");
+
+    const comment = document.createComment(FA_COMMENT);
+
+    svg.setAttribute("class", (svgType === "vs") ? "vs" : "hand");
+    svg.setAttribute("xmlns", NS_URI_SVG);
+
+    switch (svgType) {
+        case "rock":
+            svg.setAttribute("viewBox", VB_512_512);
+            (user) ? path.setAttribute("d", USER_ROCK)
+                : path.setAttribute("d", COMPUTER_ROCK);
+            break;
+
+        case "paper":
+            svg.setAttribute("viewBox", VB_512_512);
+            (user) ? path.setAttribute("d", USER_PAPER)
+                : path.setAttribute("d", COMPUTER_PAPER);
+            break;
+
+        case "scissors":
+            svg.setAttribute("viewBox", VB_512_512);
+            (user) ? path.setAttribute("d", USER_SCISSORS)
+                : path.setAttribute("d", COMPUTER_SCISSORS);
+            break;
+
+        case "vs":
+            svg.setAttribute("viewBox", "0 0 384 512");
+            path.setAttribute("d", VERSUS);
             break;
     }
+
+    svg.replaceChildren(comment, path);
+
+    return svg;
 }
 
-function playGame() {
-    let humanSelection;
-    let computerSelection;
+function showWinner() {
+    const messages = document.querySelector(".messages");
+    const versus = document.querySelector(".versus");
 
-    for (let i = 0; i < 5; i++) {
-        humanSelection = getHumanChoice();
-        computerSelection = getComputerChoice();
+    messages.removeChild(messages.lastChild);
 
-        playRound(humanSelection, computerSelection);
-    }
+    versus.setAttribute("style", "white-space: pre-line");
 
-    if (humanScore > computerScore) {
-        console.log(`You have beaten the computer with a score of ${humanScore} vs. ${computerScore}`);
-    } else if (humanScore < computerScore) {
-        console.log(`You have been beaten by the computer with a score of ${computerScore} vs. ${humanScore}`);
+    versus.textContent = (humanScore === 5) ? "CONGRATUTALIONS!\r\nYOU WON!"
+        : "THE COMPUTER WON!\r\nTRY AGAIN!";
+}
+
+function addScores(score) {
+    const svgType = score.id;
+
+    const p = document.createElement("p");
+
+    const svg = document.createElementNS(NS_URI_SVG, "svg");
+    const path = document.createElementNS(NS_URI_SVG, "path");
+
+    const comment = document.createComment(FA_COMMENT);
+
+    p.setAttribute("class", "score");
+    svg.setAttribute("xmlns", NS_URI_SVG);
+
+    if (svgType === "human-score") {
+        svg.setAttribute("viewBox", "0 0 448 512");
+        path.setAttribute("d", USER);
     } else {
-        console.log(`It's a draw with the computer with a score of ${humanScore} vs. ${computerScore}`);
+        svg.setAttribute("viewBox", "0 0 640 512");
+        path.setAttribute("d", COMPUTER);
+    }
+
+    svg.replaceChildren(comment, path);
+    score.replaceChildren(svg, p);
+}
+
+function addButtonsSvg(button) {
+    const svgType = button.id;
+
+    const svg = document.createElementNS(NS_URI_SVG, "svg");
+    const path = document.createElementNS(NS_URI_SVG, "path");
+
+    const comment = document.createComment(FA_COMMENT);
+
+    svg.setAttribute("xmlns", NS_URI_SVG);
+    svg.setAttribute("viewBox", VB_512_512);
+
+    path.setAttribute("d", (svgType === "rock") ? ROCK :
+        (svgType === "paper") ? PAPER : SCISSORS);
+
+    svg.replaceChildren(comment, path);
+
+    button.appendChild(svg);
+}
+
+function play(event) {
+    if (humanScore < 5 && computerScore < 5) {
+        const humanChoice = event.currentTarget.id;
+        const computerChoice = getComputerChoice();
+
+        playRound(humanChoice, computerChoice);
+
+        updateScores();
+
+        if (humanScore === 5 || computerScore === 5) {
+            humanScore = 0;
+            computerScore = 0;
+
+            showWinner();
+        }
     }
 }
+
+const buttons = document.querySelectorAll("button");
+const scores = document.querySelector(".scores");
 
 let humanScore = 0;
 let computerScore = 0;
 
-playGame();
+addScores(scores.firstElementChild);
+addScores(scores.lastElementChild);
+
+updateScores();
+
+buttons.forEach(button => addButtonsSvg(button));
+
+buttons.forEach(button => {
+    button.addEventListener("click", event => play(event))
+});
