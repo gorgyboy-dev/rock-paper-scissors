@@ -1,27 +1,110 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+* {
+    color: #000000;
+    font-weight: 900;
+    text-align: center;
+    margin: 0;
+}
+
+body,
 .container,
+h1,
 .buttons,
-.score,
-button {
+button,
+.messages,
+.versus,
+.scores,
+.human-score,
+.computer-score {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.container {
+.container,
+.buttons,
+.versus {
+    justify-content: space-evenly;
+}
+
+.container,
+.messages,
+.human-score,
+.computer-score {
     flex-direction: column;
-    gap: 3em;
+}
+
+h1,
+.buttons,
+.messages,
+.scores {
+    height: 16.67%;
+}
+
+.buttons,
+.messages,
+.versus {
+    width: 100%;
+}
+
+.messages,
+.human-score,
+.computer-score {
+    gap: 0.5rem;
+}
+
+.messages,
+.scores {
+    font-size: 1.5rem;
+}
+
+.human-score svg,
+.computer-score svg {
+    height: 3.5rem;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    height: 100%;
+    width: 50%;
+    max-height: 40rem;
+    max-width: 30rem;
 }
 
 h1 {
-    text-align-last: center;
-}
-
-.buttons {
-    gap: 2em;
+    font-size: 2.5rem;
 }
 
 button {
-    height: 10em;
-    width: 10em;
-    padding: 1em;
+    height: 6.5rem;
+    width: 6.5rem;
+}
+
+button svg {
+    height: 6rem;
+}
+
+.versus .hand {
+    height: 4rem;
+}
+
+.versus .vs {
+    height: 1.5rem;
+}
+
+.scores {
+    gap: 8rem;
 }
